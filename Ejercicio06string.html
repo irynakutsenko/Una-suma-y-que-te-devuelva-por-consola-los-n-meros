@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let string = prompt("Añade una suma de dos numeros");
+        let posicion = string.indexOf("+");
+        let stringLenght = string.length;
+        let numero1 = string.substring(-1, posicion);
+        let numero2 = string.substring(posicion + 1, stringLenght);
+
+        let summa = parseInt(numero1) + parseInt(numero2);
+        document.write(numero1 + " mas " + numero2 + " son " + summa);
+    </script>
+</body>
+
+</html>
